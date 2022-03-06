@@ -1,3 +1,1 @@
-# Dice-Roll-React-
-
-First Commit
+console.log("test");
