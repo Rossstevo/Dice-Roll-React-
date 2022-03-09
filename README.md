@@ -1,4 +1,3 @@
-# Dice-Roll-React-
 
 # Dice App
 
