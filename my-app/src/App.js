@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Title} from './components/Title';
-import {Button} from './components/Button';
+import {DiceApp} from './components/DiceApp';
 
 
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Title/>
-        <Button/>
+        <DiceApp/>
        
         
       </header>
