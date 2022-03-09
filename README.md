@@ -5,18 +5,16 @@
 This project will involve:
 - useState hook
 - handling input data
-- passing state as props
-- using conditional operators to show or hide elements
 
-Don't feel that you have to do every single task; I recommend aiming to do at least tasks 0, 1, and 1.1 done to practice
-the concepts we've learned this week.
+# Made using
 
-[Go to the hints at the bottom of the page if you get stuck on the first few tasks!](#hints)
+- React
+
 
 ###### Note:
 Every time you see 1dN (e.g. 1d6, 1d20), I mean "I have rolled one N-sided die", such as a 6-sided die.
 
-# Task 0
+# Task 
 
 Create a Dice app.
 
@@ -27,80 +25,10 @@ to the output, or log of clicks, in a new p tag going from most recent roll at t
 
 ![A button that says Roll 1d6 and has a log of the previous rolls beneath it](DiceAppImages/Screenshot%202022-03-02%20at%2013.35.16.png)
 
-## Task 1
+# My solution 
 
-Make a Dice/Die component that has a button and takes the number of sides on a die (singular for dice) as a number.
+![Screen Shot 2022-03-09 at 19 09 59](https://user-images.githubusercontent.com/85199675/157514081-87a23489-7039-475f-a198-be80e5bc47b5.png)
 
-When you click the button, it will calculate a random number; the number must be between 1 and the value of the dice (a roll).
+# What I learned 
 
-Use this dice component in a parent component (e.g. App).
-Every time one of the dice buttons is clicked, add the result to state, and display each result as a p tag on the page (like the screenshot).
-
-![App with buttons representing dice, with numbers underneath the buttons representing rolls](DiceAppImages/Screenshot%202022-03-01%20at%2022.42.36.png)
-
-## Task 1.1
-
-If you haven't already, make the p tags with the rolls their own component (Output or RollLog would be good names).
-
-## Task 2
-
-Make a number input with a button, to add a new value of die.
-
-When the user clicks the button, the Dice App should add another Dice component, that has the number of sides the user put in the input.
-
-If there is no value in the input, do not add a Dice button.
-
-![Same image as above, with a form for adding an additional dice](DiceAppImages/Screenshot%202022-03-02%20at%2011.58.49.png)
-
-## Task 3
-
-When the user has clicked the "Add a die", clear the value in the form, so that the user does not have to backspace to add another value.
-
-## Task 4
-
-If a dice of that value already exists, do not show duplicate buttons.
-
-## Task 5
-
-Add a "Clear log" button at the top of the p tags with the rolls. If there are no rolls, do not show the button.
-
-![Form and buttons as above, with a Clear Log button](DiceAppImages/Screenshot%202022-03-02%20at%2012.00.14.png)
-
-# Hints
-
-## Task 0 Hints
-
-### Rolling the number
-
-Use Math.random() multiplied by the maximum number, to calculate rolls.
-
-```js
-Math.ceil(Math.random() * 6)
-```
-
-### Displaying multiple rolls
-
-Your rolls should be saved as an array.
-
-```jsx
-const [rolls, setRolls] = useState(['1d6: 6', '1d6: 2'])
-```
-
-Which you can display by mapping.
-
-```jsx
-{rolls.map(roll => <p>{roll}</p>)}
-```
-
-## Task 1.1 Hint
-
-Your Dice App should end up with JSX a bit like this:
-
-```jsx
-<div>
-    <Dice setRolls={addRoll} rolls={rolls} sides={6} />
-    <RollLog rolls={rolls} />
-</div>
-```
-
-Both your Dice App and your Dice will have a state hook.
+For me the hardest part of learning React is learning a new way of getting my thoughts and ideas onto the page. I find Javascript(Vanilla) very logical and I can quickly get my ideas working. With React, this takes time and takes my brain away from thining about the problem to instead thinking about the syntax. I'm sure that with more exercises, this will change. 
